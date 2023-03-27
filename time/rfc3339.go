@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func main1() {
 	now := time.Now().UTC().Truncate(time.Hour)
 	rfc3339 := now.Format(time.RFC3339)
 	fmt.Println(rfc3339)
