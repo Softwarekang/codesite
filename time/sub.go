@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func main2() {
 	now := time.Now()
 	befor2H := now.AddDate(0, 0, -1).Add(time.Minute)
 
