@@ -82,6 +82,7 @@ type helloWorldListener struct {
 func (e *helloWorldListener) OnMessage(s session.Session, pkg interface{}) {
 	data := pkg.(string)
 	fmt.Printf("server got data:%s\n", data)
+	s.Close()
 }
 
 func (e *helloWorldListener) OnConnect(s session.Session) {
