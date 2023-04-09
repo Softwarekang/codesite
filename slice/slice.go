@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"net"
 )
 
 func main() {
@@ -11,7 +10,6 @@ func main() {
 	n := copy(dst, src)
 	fmt.Println(n)
 
-	listen, err := net.Listen()
 	dst = make([]byte, 5)
 	dst2 := dst[:0]
 	dst3 := dst2[:cap(dst2)]
