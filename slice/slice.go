@@ -12,6 +12,7 @@ func main() {
 
 	dst = make([]byte, 5)
 	dst2 := dst[:0]
+
 	dst3 := dst2[:cap(dst2)]
 	fmt.Println(len(dst2))
 	fmt.Println(len(dst3))
